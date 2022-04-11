@@ -1,0 +1,46 @@
+.hero {
+  background: url("../img/index-can-mobile.png") no-repeat bottom center,
+    url("../img/hero-background.png") no-repeat top center,
+    #ffffff url("../img/hero-background-cat.png") no-repeat top center;
+  margin-bottom: 20px;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 480px;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-top: 27px;
+  font-family: @font-family;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero__slogan {
+  margin: 0;
+  font-family: @font-family;
+  font-size: @font-size-text-mobile;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero__button {
+  display: block;
+  margin-top: auto;
+
+  &--mobile {
+    width: 100%;
+    padding: 7px 44px;
+  }
+}

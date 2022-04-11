@@ -1,0 +1,30 @@
+.control {
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.control__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: @font-family;
+  font-size: 16px;
+  line-height: @line-height-text-mobile;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.control__input {
+  height: 46px;
+  border: 1px solid #e7e7e7;
+
+  &::placeholder {
+    font-family: @font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: @line-height-text-mobile;
+    text-transform: uppercase;
+    color: @dark-grey;
+  }
+}
