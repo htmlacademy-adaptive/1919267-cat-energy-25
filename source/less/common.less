@@ -22,19 +22,32 @@
   box-sizing: border-box;
 }
 
-body {
+.page__body {
   margin: 0;
   padding: 0;
   min-width: 320px;
   font-family: @font-family;
   background-color: #ffffff;
   color: @dark-grey;
+
+  @media (min-width: @desktop-width) {
+    background: url("../img/hero-background-green-desktop.png") no-repeat top right,
+      #ffffff url("../../img/index-background-cat-desktop.png") no-repeat top right;
+  }
 }
 
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  width: 320px;
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .button {

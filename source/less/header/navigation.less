@@ -1,3 +1,41 @@
 .navigation__list {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 550px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+.navigation__link {
+  display: block;
+  padding: 15px 17px;
+  font-family: @font-family;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @color-dark;
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: @color-light;
+  }
+}
+
+.navigation__toggle {
+  display: block;
+  width: 24px;
+  height: 16px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

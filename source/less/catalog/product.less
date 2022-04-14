@@ -1,8 +1,20 @@
-.product__link {
-  text-decoration: none;
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  height: 185px;
+  padding-top: 21px;
+}
+
+.product__image {
+  grid-row: 1 / 3;
+  margin: auto;
 }
 
 .product__title {
+  width: 76px;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-family: @font-family;
   font-weight: 400;
   font-size: 16px;
@@ -12,12 +24,21 @@
 }
 
 .product__button {
+  grid-column: 1 / 3;
+  margin-top: auto;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-family: @font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
   width: 100%;
 }
 
 .product__parameters {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;

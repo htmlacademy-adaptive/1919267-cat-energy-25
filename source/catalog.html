@@ -11,12 +11,14 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="container">
-      <a href="index.html" class="main-header__logo logo">
-        <img class="logo__icon" src="img/header/logo-mobile.svg" width="34" height="38"
+    <div class="main-header__container container">
+      <a class="main-header__logo logo" href="index.html">
+        <img class="logo__icon" src="img/header/logotype-mobile.svg" width="34" height="38"
           alt="Иконка логотипа Кэт Энержди.">
-        <img class="logo__text" src="img/header/logo-text.svg" width="101" height="18"
-          alt="Текст логотипа Кэт Энержди.">
+      </a>
+      <a class="main-header__site-name site-name" href="index.html">
+        <img class="site-name__image" src="img/header/site-name.svg" width="101" height="18"
+          alt="Название сайта Кэт Энержди.">
       </a>
       <nav class="main-header__navigation navigation">
         <button class="navigation__toggle navigation__toggle--closed" type="button">
@@ -43,159 +45,143 @@
         <h2 class="main-catalog__title">Каталог продукции</h2>
         <ul class="main-catalog__list">
           <li class="main-catalog__item product">
-            <a href="#" class="product__link">
-              <img class="product__image" width="68" height="86" src="img/catalog/chicken-500.png"
-                alt="Cat Energy PRO курица 500 грамм">
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
-              <ul class="product__parameters">
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Масса</span>
-                  <span class="product-parameters__value">500 г</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Вкус</span>
-                  <span class="product-parameters__value">Курица</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Цена</span>
-                  <span class="product-parameters__value">700 Р.</span>
-                </li>
-              </ul>
-            </a>
+            <img class="product__image" width="68" height="86" src="img/catalog/chicken-500.png"
+              alt="Cat Energy PRO курица 500 грамм">
+            <h3 class="product__title">Cat Energy PRO 500 г</h3>
+            <ul class="product__parameters product-parameters">
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Масса</span>
+                <span class="product-parameters__value">500 г</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Вкус</span>
+                <span class="product-parameters__value">Курица</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Цена</span>
+                <span class="product-parameters__value">700 Р.</span>
+              </li>
+            </ul>
             <a class="product__button button" type="button">Заказать</a>
           </li>
           <li class="main-catalog__item product">
-            <a href="#" class="product__link">
-              <img src="img/catalog/chicken-1000.png" alt="Cat Energy PRO курица 1000 грамм" class="product__image">
-              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
-              <ul class="product__parameters product-parameters">
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Масса</span>
-                  <span class="product-parameters__value">1000 г</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Вкус</span>
-                  <span class="product-parameters__value">Курица</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Цена</span>
-                  <span class="product-parameters__value">1000 Р.</span>
-                </li>
-              </ul>
-            </a>
+            <img src="img/catalog/chicken-1000.png" alt="Cat Energy PRO курица 1000 грамм" class="product__image">
+            <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+            <ul class="product__parameters product-parameters">
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Масса</span>
+                <span class="product-parameters__value">1000 г</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Вкус</span>
+                <span class="product-parameters__value">Курица</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Цена</span>
+                <span class="product-parameters__value">1000 Р.</span>
+              </li>
+            </ul>
             <a class="product__button button" type="button">Заказать</a>
           </li>
           <li class="main-catalog__item product">
-            <a href="#" class="product__link">
-              <img src="img/catalog/fish-500.png" alt="Cat Energy PRO рыба 500 грамм" class="product__image">
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
-              <ul class="product__parameters product-parameters">
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Масса</span>
-                  <span class="product-parameters__value">500 г</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Вкус</span>
-                  <span class="product-parameters__value">Рыба</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Цена</span>
-                  <span class="product-parameters__value">700 Р.</span>
-                </li>
-              </ul>
-            </a>
+            <img src="img/catalog/fish-500.png" alt="Cat Energy PRO рыба 500 грамм" class="product__image">
+            <h3 class="product__title">Cat Energy PRO 500 г</h3>
+            <ul class="product__parameters product-parameters">
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Масса</span>
+                <span class="product-parameters__value">500 г</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Вкус</span>
+                <span class="product-parameters__value">Рыба</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Цена</span>
+                <span class="product-parameters__value">700 Р.</span>
+              </li>
+            </ul>
             <a class="product__button button" type="button">Заказать</a>
           </li>
           <li class="main-catalog__item product">
-            <a href="#" class="product__link">
-              <img src="img/catalog/fish-1000.png" alt="Cat Energy PRO рыба 1000 грамм" class="product__image">
-              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
-              <ul class="product__parameters product-parameters">
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Масса</span>
-                  <span class="product-parameters__value">1000 г</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Вкус</span>
-                  <span class="product-parameters__value">Рыба</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Цена</span>
-                  <span class="product-parameters__value">1000 Р.</span>
-                </li>
-              </ul>
-            </a>
+            <img src="img/catalog/fish-1000.png" alt="Cat Energy PRO рыба 1000 грамм" class="product__image">
+            <h3 class="product__title">Cat Energy PRO 1000 г</h3>
+            <ul class="product__parameters product-parameters">
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Масса</span>
+                <span class="product-parameters__value">1000 г</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Вкус</span>
+                <span class="product-parameters__value">Рыба</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Цена</span>
+                <span class="product-parameters__value">1000 Р.</span>
+              </li>
+            </ul>
             <a class="product__button button" type="button">Заказать</a>
           </li>
           <li class="main-catalog__item product">
-            <a href="#" class="product__link">
-              <img src="img/catalog/buckwheat-500.png" alt="Cat Energy slim гречка 500 грамм" class="product__image">
-              <h3 class="product__title">Cat Energy slim 500 г</h3>
-              <ul class="product__parameters product-parameters">
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Масса</span>
-                  <span class="product-parameters__value">500 г</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Вкус</span>
-                  <span class="product-parameters__value">Гречка</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Цена</span>
-                  <span class="product-parameters__value">400 Р.</span>
-                </li>
-              </ul>
-            </a>
+            <img src="img/catalog/buckwheat-500.png" alt="Cat Energy slim гречка 500 грамм" class="product__image">
+            <h3 class="product__title">Cat Energy slim 500 г</h3>
+            <ul class="product__parameters product-parameters">
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Масса</span>
+                <span class="product-parameters__value">500 г</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Вкус</span>
+                <span class="product-parameters__value">Гречка</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Цена</span>
+                <span class="product-parameters__value">400 Р.</span>
+              </li>
+            </ul>
             <a class="product__button button" type="button">Заказать</a>
           </li>
           <li class="main-catalog__item product">
-            <a href="#" class="product__link">
-              <img src="img/catalog/buckwheat-1000.png" alt="Cat Energy slim гречка 1000 грамм" class="product__image">
-              <h3 class="product__title">Cat Energy slim 1000 г</h3>
-              <ul class="product__parameters product-parameters">
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Масса</span>
-                  <span class="product-parameters__value">1000 г</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Вкус</span>
-                  <span class="product-parameters__value">Гречка</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Цена</span>
-                  <span class="product-parameters__value">700 Р.</span>
-                </li>
-              </ul>
-            </a>
+            <img src="img/catalog/buckwheat-1000.png" alt="Cat Energy slim гречка 1000 грамм" class="product__image">
+            <h3 class="product__title">Cat Energy slim 1000 г</h3>
+            <ul class="product__parameters product-parameters">
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Масса</span>
+                <span class="product-parameters__value">1000 г</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Вкус</span>
+                <span class="product-parameters__value">Гречка</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Цена</span>
+                <span class="product-parameters__value">700 Р.</span>
+              </li>
+            </ul>
             <a class="product__button button" type="button">Заказать</a>
           </li>
           <li class="main-catalog__item product">
-            <a href="#" class="product__link">
-              <img src="img/catalog/rice-500.png" alt="Cat Energy slim рис 500 грамм" class="product__image">
-              <h3 class="product__title">Cat Energy slim 500 г</h3>
-              <ul class="product__parameters product-parameters">
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Масса</span>
-                  <span class="product-parameters__value">500 г</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Вкус</span>
-                  <span class="product-parameters__value">Рис</span>
-                </li>
-                <li class="product-parameters__item">
-                  <span class="product-parameters__name">Цена</span>
-                  <span class="product-parameters__value">500 Р.</span>
-                </li>
-              </ul>
-            </a>
+            <img src="img/catalog/rice-500.png" alt="Cat Energy slim рис 500 грамм" class="product__image">
+            <h3 class="product__title">Cat Energy slim 500 г</h3>
+            <ul class="product__parameters product-parameters">
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Масса</span>
+                <span class="product-parameters__value">500 г</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Вкус</span>
+                <span class="product-parameters__value">Рис</span>
+              </li>
+              <li class="product-parameters__item">
+                <span class="product-parameters__name">Цена</span>
+                <span class="product-parameters__value">500 Р.</span>
+              </li>
+            </ul>
             <a class="product__button button" type="button">Заказать</a>
           </li>
           <li class="main-catalog__item product product--show-more">
-            <a href="#" class="product__link">
-              <img src="#" alt="" class="product__image">
-              <h3 class="product__title">Показать еще 100500 товаров</h3>
-              <p class="product__info">На самом деле вкусов гораздо больше!</p>
-            </a>
+            <img src="#" alt="" class="product__image">
+            <h3 class="product__title">Показать еще 100500 товаров</h3>
+            <p class="product__info">На самом деле вкусов гораздо больше!</p>
             <a class="product__button product__button--show-more button" type="button">Показать все</a>
           </li>
         </ul>
@@ -259,9 +245,9 @@
       </div>
     </section>
     <div class="main-footer__container container">
-      <a class="main-footer__logo logo">
-        <img href="#" class="logo__text" src="img/header/logo-text.svg" width="128" height="24"
-          alt="Текст логотипа Кэт Энержди.">
+      <a class="main-footer__site-name site-name">
+        <img class="site-name__image" src="img/header/site-name.svg" width="128" height="24"
+          alt="Название сайта Кэт Энержди.">
       </a>
       <div class="main-footer__social social">
         <h2 class="visually-hidden">Мы в соцсетях.</h2>
