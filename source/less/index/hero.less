@@ -1,15 +1,36 @@
 .hero {
-  background: url("../img/index-can-mobile.png") no-repeat bottom center,
-    url("../img/hero-background.png") no-repeat top center,
+  background: url("../img/index-can-mobile.png") no-repeat center 167px,
+    url("../img/hero-background-green.png") no-repeat top center,
     #ffffff url("../img/hero-background-cat.png") no-repeat top center;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    height: 872px;
+    background: #ffffff url("../img/index-can-tablet.png") no-repeat center 263px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 630px;
+    background: url("../img/index-can-desktop.png") no-repeat 63% 32px;
+    margin-bottom: 82px;
+  }
 }
 
 .hero__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 480px;
+  height: 480px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 117px;
+    align-items: flex-start;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 80px;
+  }
 }
 
 .hero__title {
@@ -22,6 +43,15 @@
   font-weight: 400;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 41px;
+    padding-top: 62px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: @color-dark;
+  }
 }
 
 .hero__slogan {
@@ -33,14 +63,33 @@
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: @color-dark;
+  }
 }
 
 .hero__button {
   display: block;
+  width: 100%;
+  padding: 11px 0;
   margin-top: auto;
+  font-family: @font-family;
+  font-size: @font-size-text-mobile;
+  line-height: @line-height-text-mobile;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
 
-  &--mobile {
-    width: 100%;
-    padding: 7px 44px;
+  @media (min-width: @tablet-width) {
+    width: 244px;
+    margin-top: 49px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
