@@ -1,4 +1,5 @@
 .address {
+  position: relative;
   height: 474px;
 
   @media (min-width: @tablet-width) {
@@ -13,22 +14,27 @@
 .address__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 26px 20px;
 
   @media (min-width: @tablet-width) {
-    padding: 56px 70px;
+    padding: 60px 70px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
+    top: 49%;
+    right: 55.5%;
+    transform: translateY(-50%);
     width: 565px;
-    height: 198px;
+    min-height: 198px;
+    padding: 56px 82px 56px 79px;
     background-color: #ffffff;
   }
 }
 
 .address__promo {
-  min-width: 139px;
+  min-width: 140px;
   font-family: @font-family;
   font-size: 16px;
   line-height: 20px;
@@ -51,17 +57,25 @@
   color: @dark-grey;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 79px;
     font-size: 16px;
     text-align: end;
   }
+
+  @media (min-width: @desktop-width) {
+    text-align: start;
+  }
+}
+
+.address__street {
+  display: block;
 }
 
 .address__city {
   display: block;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 15px;
-  }
 }
 
 .address__map {

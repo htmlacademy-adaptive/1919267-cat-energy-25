@@ -1,31 +1,36 @@
 .hero {
-  background: url("../img/index-can-mobile.png") no-repeat center 167px,
-    url("../img/hero-background-green.png") no-repeat top center,
-    #ffffff url("../img/hero-background-cat.png") no-repeat top center;
+  min-height: 480px;
   margin-bottom: 20px;
+  background: url("../../img/hero-background-cat.png") center top no-repeat,
+    url("../../img/background-cat-grey.png") center top / 100% 302px repeat;
 
   @media (min-width: @tablet-width) {
-    height: 872px;
-    background: #ffffff url("../img/index-can-tablet.png") no-repeat center 263px;
+    min-height: 837px;
+    background: none;
     margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
-    height: 630px;
-    background: url("../img/index-can-desktop.png") no-repeat 63% 32px;
+    max-width: 1220px;
+    min-height: 577px;
+    margin: 0 auto;
     margin-bottom: 82px;
+    background: url("../img/index-can-desktop.png") no-repeat 67% 31%;
   }
 }
 
-.hero__container {
+.hero__info-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 480px;
+  background: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%);
 
   @media (min-width: @tablet-width) {
-    padding-left: 117px;
+    margin-bottom: 0;
+    padding-left: 119px;
+    padding-right: 30px;
     align-items: flex-start;
+    background: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -34,9 +39,10 @@
 }
 
 .hero__title {
-  margin: 0;
-  margin-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 23px;
   padding-top: 27px;
+  width: 250px;
   font-family: @font-family;
   font-size: 36px;
   line-height: 36px;
@@ -45,17 +51,26 @@
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    width: 450px;
     margin-bottom: 41px;
-    padding-top: 62px;
+    padding-top: 30px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     color: @color-dark;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 104px;
+  }
 }
 
 .hero__slogan {
   margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 29px;
+  width: 100%;
   font-family: @font-family;
   font-size: @font-size-text-mobile;
   line-height: 14px;
@@ -65,10 +80,39 @@
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    padding-left: 0;
+    padding-bottom: 20px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-    color: @color-dark;
+    color: #000000;
+    background: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 416px;
+  }
+}
+
+.hero__button-wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 315px;
+  background: url("../../img/index-can-mobile.png") no-repeat center top,
+    linear-gradient(180deg, rgba(104, 183, 56, 0.85) 43%, rgba(255, 255, 255, 1) 43%);
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-top: 29px;
+    display: block;
+    min-height: 609px;
+    background: url("../../img/index-can-tablet.png") no-repeat center center;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: none;
+    min-height: 40px;
+    padding-top: 33px;
   }
 }
 
@@ -76,6 +120,8 @@
   display: block;
   width: 100%;
   padding: 11px 0;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: auto;
   font-family: @font-family;
   font-size: @font-size-text-mobile;
@@ -86,10 +132,14 @@
   color: #ffffff;
 
   @media (min-width: @tablet-width) {
-    width: 244px;
-    margin-top: 49px;
-    padding: 14px 26px;
+    max-width: 244px;
+    margin-left: 119px;
+    padding: 17px 26px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
   }
 }
