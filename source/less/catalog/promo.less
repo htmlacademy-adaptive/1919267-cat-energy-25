@@ -1,16 +1,70 @@
 .promo {
-  background: url("../../img/additional-catalog__promo-green.png") no-repeat,
-    url("../../img/additional-catalog__promo-cat.png") no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 290px;
+  padding-top: 58px;
+  padding-bottom: 43px;
+  background: url("../../img/additional-catalog-promo-green.png") repeat,
+    url("../../img/additional-catalog__promo-cat.png") center center no-repeat,
+    url("../../img/background-cat-grey.png") repeat;
+  background-size: contain;
+
+  @media (min-width: @tablet-width) {
+    min-height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 77px;
+    padding-right: 124px;
+    background: url("../../img/additional-catalog-promo-green.png") repeat,
+      url("../../img/additional-catalog-promo-tablet.png") center center no-repeat,
+      url("../../img/background-cat-grey.png") repeat;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 58px;
+    padding-bottom: 43px;
+    padding-left: 0;
+    padding-right: 0;
+    background: url("../../img/additional-catalog-promo-green.png") repeat,
+      url("../../img/additional-catalog__promo-cat.png") center center no-repeat,
+      url("../../img/background-cat-grey.png") repeat;
+    background-size: cover;
+  }
+}
+
+.promo__image {
+  width: 79px;
+  height: 79px;
+  margin-bottom: 50px;
+  background: url("../../img/icon_gift.svg");
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 83px;
+    margin-bottom: 0;
+  }
 }
 
 .promo__description {
-  margin: 0 auto;
-  padding-top: 187px;
+  margin: 0;
   width: 161px;
   font-family: @font-family-text;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  color: @color-light;
+  color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: center;
+  }
 }
