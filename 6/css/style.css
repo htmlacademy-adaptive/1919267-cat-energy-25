@@ -370,7 +370,7 @@ img {
 .hero {
   min-height: 480px;
   margin-bottom: 20px;
-  background: url("../../img/hero-background-cat.png") center top no-repeat, url("../../img/background-cat-grey.png") center top / 100% 302px repeat;
+  background: url("../img/hero-background-cat.png") center top no-repeat, url("../img/background-cat-grey.png") center top / 100% 302px repeat;
 }
 @media (min-width: 768px) {
   .hero {
@@ -470,7 +470,7 @@ img {
   display: flex;
   width: 100%;
   min-height: 315px;
-  background: url("../../img/index-can-mobile.png") no-repeat center top, linear-gradient(180deg, rgba(104, 183, 56, 0.85) 43%, #ffffff 43%);
+  background: url("../img/index-can-mobile.png") no-repeat center top, linear-gradient(180deg, rgba(104, 183, 56, 0.85) 43%, #ffffff 43%);
 }
 @media (min-width: 768px) {
   .hero__button-wrapper {
@@ -478,7 +478,7 @@ img {
     padding-top: 29px;
     display: block;
     min-height: 609px;
-    background: url("../../img/index-can-tablet.png") no-repeat center center;
+    background: url("../img/index-can-tablet.png") no-repeat center center;
   }
 }
 @media (min-width: 1280px) {
@@ -763,7 +763,7 @@ img {
     max-width: 1220px;
     margin: 0 auto;
     padding: 0;
-    background: url("../../img/background-grey-tablet.png") repeat-x left 145px;
+    background: url("../img/background-grey-tablet.png") repeat-x left 145px;
   }
 }
 .example__options {
@@ -1915,7 +1915,7 @@ img {
   min-height: 290px;
   padding-top: 58px;
   padding-bottom: 43px;
-  background: url("../../img/additional-catalog-promo-green.png") repeat, url("../../img/additional-catalog__promo-cat.png") center center no-repeat, url("../../img/background-cat-grey.png") repeat;
+  background: url("../img/additional-catalog-promo-green.png") repeat, url("../img/additional-catalog__promo-cat.png") center center no-repeat, url("../img/background-cat-grey.png") repeat;
   background-size: contain;
 }
 @media (min-width: 768px) {
@@ -1925,7 +1925,7 @@ img {
     justify-content: space-between;
     padding-left: 77px;
     padding-right: 124px;
-    background: url("../../img/additional-catalog-promo-green.png") repeat, url("../../img/additional-catalog-promo-tablet.png") center center no-repeat, url("../../img/background-cat-grey.png") repeat;
+    background: url("../img/additional-catalog-promo-green.png") repeat, url("../img/additional-catalog-promo-tablet.png") center center no-repeat, url("../img/background-cat-grey.png") repeat;
   }
 }
 @media (min-width: 1280px) {
@@ -1937,7 +1937,7 @@ img {
     padding-bottom: 43px;
     padding-left: 0;
     padding-right: 0;
-    background: url("../../img/additional-catalog-promo-green.png") repeat, url("../../img/additional-catalog__promo-cat.png") center center no-repeat, url("../../img/background-cat-grey.png") repeat;
+    background: url("../img/additional-catalog-promo-green.png") repeat, url("../img/additional-catalog__promo-cat.png") center center no-repeat, url("../img/background-cat-grey.png") repeat;
     background-size: cover;
   }
 }
@@ -1945,7 +1945,7 @@ img {
   width: 79px;
   height: 79px;
   margin-bottom: 50px;
-  background: url("../../img/icon_gift.svg");
+  background: url("../img/icon_gift.svg");
 }
 @media (min-width: 768px) {
   .promo__image {
