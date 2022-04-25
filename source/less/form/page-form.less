@@ -5,7 +5,12 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color: @color-dark;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .page-form__description {
@@ -17,4 +22,9 @@
   font-weight: 400;
   text-transform: uppercase;
   color: @color-dark;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

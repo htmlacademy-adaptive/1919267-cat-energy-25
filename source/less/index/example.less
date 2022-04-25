@@ -1,12 +1,52 @@
 .example {
+  background-color: #eaeaea;
+
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 60%, rgba(242, 242, 242, 1) 60%);
+  }
+
+  @media (min-width: @desktop-width) {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 30%, rgba(242, 242, 242, 1) 30%);
+  }
+}
+
+.example__container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
   @media (min-width: @desktop-width) {
     display: flex;
-    background: url("../../img/background-grey-tablet.png") repeat-x left 145px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+    background: url("../img/background-grey-tablet.png") repeat-x left 145px;
   }
 }
 
 .example__options {
+  padding-top: 25px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 43px;
+    margin-bottom: 60px;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.example__result {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    height: 641px;
+    padding-top: 0;
   }
 }

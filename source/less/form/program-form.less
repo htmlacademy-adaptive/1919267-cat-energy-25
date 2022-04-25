@@ -1,5 +1,20 @@
 .program-form {
   background-color: @color-light;
+  padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 82px;
+  }
+}
+
+.program-form__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+  }
 }
 
 .program-form__field-group {
@@ -16,21 +31,41 @@
   font-size: 24px;
   line-height: 26px;
   color: @color-dark;
+
+  @media (min-width: @desktop-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .program-form__main-button {
   padding-top: 7px;
   padding-bottom: 7px;
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 282px;
+    margin-right: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 568px;
+    margin-right: 81px;
+  }
 }
 
 .program-form__small-legend {
   display: block;
-  margin: 21px auto 32px;
+  margin: 21px auto 0;
   font-family: @font-family-text;
   font-weight: 400;
   font-size: @font-size-text-mobile;
   line-height: 16px;
   text-align: center;
   color: @color-dark;
+
+  @media (min-width: @tablet-width) {
+    display: inline-block;
+    margin: 0;
+  }
 }

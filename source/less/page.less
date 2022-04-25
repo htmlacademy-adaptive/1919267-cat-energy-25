@@ -1,0 +1,45 @@
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0 auto;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #ffffff;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(104, 183, 56, 0.85) 50%),
+      url("../img/index-background-cat-desktop.png"),
+      linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(79, 78, 83, 1) 50%);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto 693px;
+
+    &--catalog,
+    &--form {
+      background: none;
+    }
+  }
+}
+
+.page-form {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

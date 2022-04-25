@@ -1,11 +1,20 @@
 .result {
-  background-color: #eaeaea;
+  min-height: 232px;
 
-  @media (min-width: @tablet-width) {
-    background: url("../../img/background-grey-tablet.png") repeat-x center bottom;
+  @media (min-width: @desktop-width) {
+    margin-left: 187px;
   }
+}
+
+.result__slider {
+  background-color: transparent;
+  margin: 0 auto 15px;
+}
+
+.result__range {
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    background: none;
+    margin-top: 25px;
   }
 }
