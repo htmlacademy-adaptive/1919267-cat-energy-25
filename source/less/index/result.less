@@ -1,8 +1,13 @@
 .result {
   min-height: 232px;
 
+  @media (min-width: @tablet-width) {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 28%, rgba(242, 242, 242, 1) 28%);
+  }
+
   @media (min-width: @desktop-width) {
-    margin-left: 187px;
+    width: 591px;
+    background: none;
   }
 }
 

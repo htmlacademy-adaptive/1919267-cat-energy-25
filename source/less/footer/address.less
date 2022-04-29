@@ -15,20 +15,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 26px 20px;
+  padding: 26px 24px 26px 20px;
 
   &--catalog {
     background-color: #f2f2f2;
   }
 
   @media (min-width: @tablet-width) {
-    padding: 60px 70px;
+    padding: 59px 70px;
   }
 
   @media (min-width: @desktop-width) {
     position: absolute;
     top: 49%;
-    right: 55.5%;
+    right: 53%;
     transform: translateY(-50%);
     width: 565px;
     min-height: 198px;
@@ -55,7 +55,7 @@
 .address__details {
   font-family: @font-family-text;
   font-size: @font-size-text-mobile;
-  line-height: 20px;
+  line-height: 17px;
   font-weight: 400;
   font-style: normal;
   color: @dark-grey;
@@ -76,6 +76,7 @@
 
 .address__street {
   display: block;
+  line-height: 20px;
 }
 
 .address__city {

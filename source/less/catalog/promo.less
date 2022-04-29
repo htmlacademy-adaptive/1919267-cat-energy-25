@@ -15,6 +15,7 @@
     min-height: 200px;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 49px;
     padding-left: 77px;
     padding-right: 124px;
     background: url("../img/additional-catalog-promo-green.png") repeat,
@@ -24,6 +25,7 @@
 
   @media (min-width: @desktop-width) {
     width: 245px;
+    min-height: 288px;
     flex-direction: column;
     align-items: center;
     padding-top: 58px;
@@ -42,11 +44,18 @@
   height: 79px;
   margin-bottom: 50px;
   background: url("../img/icon_gift.svg");
+  background-size: 78px 80px;
 
   @media (min-width: @tablet-width) {
     width: 80px;
     height: 83px;
     margin-bottom: 0;
+    margin-top: -8px;
+    background-size: 80px 83px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: -2px;
   }
 }
 

@@ -1,17 +1,43 @@
 .program-purpose {
+  padding: 22px 20px 16px;
+  border: none;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 67px 38px 71px;
+    border: 0;
+  }
+
   @media (min-width: @desktop-width) {
-    min-width: 570px;
+    width: 569px;
+    padding: 0;
   }
 }
 
 .program-purpose__list {
   margin: 0;
-  padding-top: 22px;
-  padding-bottom: 20px;
-  padding-left: 45px;
+  padding: 0;
   list-style-type: none;
 
   @media (min-width: @tablet-width) {
+    padding: 28px 28px 25px;
     border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 29px 29px 25px;
+  }
+}
+
+.program-purpose__item {
+  display: flex;
+  margin-bottom: 11px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 18px;
   }
 }
