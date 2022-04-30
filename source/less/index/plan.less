@@ -1,13 +1,146 @@
+.plan__container {
+  @media (min-width: @tablet-width) {
+    position: relative;
+    margin-right: 62px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-52%);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #68b738;
+
+      @media (min-width: @desktop-width) {
+        display: none;
+      }
+    }
+
+    &--slim::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-59%);
+      width: 140px;
+      height: 194px;
+      background-image: url("../img/index/cat-slim.svg");
+      background-size: 140px 194px;
+
+      @media (min-width: @desktop-width) {
+        display: none;
+      }
+    }
+
+    &--pro::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -34px;
+      transform: translateY(-53%);
+      width: 268px;
+      height: 112px;
+      background-image: url("../img/index/cat-pro.svg");
+      background-size: 268px 112px;
+
+      @media (min-width: @desktop-width) {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+  }
+}
+
 .plan__title {
+  position: relative;
   margin: 0;
   padding-bottom: 29px;
   padding-left: 70px;
   font-family: @font-family;
   font-size: 24px;
   font-weight: 400;
-  line-height: 37px;
+  line-height: 36px;
   text-transform: uppercase;
   color: @color-dark;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 2px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+      top: 6px;
+      left: 0;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &--slim::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 9px;
+    width: 36px;
+    height: 50px;
+    background-image: url("../img/index/cat-slim.svg");
+    background-repeat: no-repeat;
+    background-size: 36px 50px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+      top: 0;
+      left: 15px;
+      width: 70px;
+      height: 97px;
+      background-size: 70px 97px;
+    }
+  }
+
+  &--pro::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -7px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/index/cat-pro.svg");
+    background-repeat: no-repeat;
+    background-size: 67px 28px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: block;
+      top: 26px;
+      left: -18px;
+      width: 134px;
+      height: 56px;
+      background-size: 134px 56px;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding-left: 0;
@@ -25,7 +158,7 @@
 
 .plan__description {
   margin: 0;
-  padding-bottom: 21px;
+  padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
   font-family: @font-family-text;
   font-size: @font-size-text-mobile;
@@ -47,18 +180,60 @@
 }
 
 .plan__button {
-  display: block;
-  padding-top: 19px;
+  position: relative;
+  display: inline-block;
+  max-width: 85%;
+  margin-top: 19px;
+  padding-right: 17px;
   font-family: @font-family;
   font-size: 16px;
-  line-height: @line-height-text-mobile;
+  line-height: 17px;
   text-transform: uppercase;
   text-decoration: none;
   color: @color-dark;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100%;
+    width: 22px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &:hover::before {
+    width: 30px;
+    right: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 17px);
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 7px;
+    border-color: transparent transparent transparent #000000;
+  }
+
+  &:hover::after {
+    left: calc(100% + 25px);
+  }
+
   @media (min-width: @tablet-width) {
+    margin-top: 0;
     padding-top: 0;
+    padding-right: 26px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 6%;
   }
 }

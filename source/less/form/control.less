@@ -1,27 +1,52 @@
-.control {
-  &:not(:last-child) {
-    margin-bottom: 13px;
-  }
-}
-
 .control__label {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: @font-family;
-  font-size: 16px;
-  line-height: @line-height-text-mobile;
-  font-weight: 400;
-  text-transform: uppercase;
 }
 
 .control__input {
-  padding: 0;
+  padding-top: 13px;
+  padding-bottom: 16px;
   padding-left: 14px;
-  margin-left: 9px;
-  height: 46px;
+  margin-left: 15px;
+  width: 172px;
+  height: 45px;
+  font-family: @font-family;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
   border: 1px solid #e7e7e7;
+  color: @dark-grey;
   flex-grow: 1;
+
+  &[type="number"] {
+    appearance: textfield;
+  }
+
+  &:hover,
+  &:active {
+    border-color: #cdcdcd;
+    background-color: #ffffff;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid @dark-grey;
+    background-color: #ffffff;
+
+    + svg {
+      stroke: #68b738;
+    }
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+
+    + svg {
+      stroke: #ff8282;
+    }
+  }
 
   &::placeholder {
     font-family: @font-family;
@@ -30,5 +55,37 @@
     line-height: @line-height-text-mobile;
     text-transform: uppercase;
     color: @dark-grey;
+
+    @media (min-width: @tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 52px;
+    margin-left: 18px;
+    padding-left: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 16px;
+  }
+}
+
+.control__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  fill: none;
+  stroke: #222222;
+
+  @media (min-width: @tablet-width) {
+    right: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    right: 17px;
   }
 }

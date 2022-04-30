@@ -7,6 +7,7 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
+    padding-left: 7px;
     height: 40px;
   }
 }
@@ -22,20 +23,38 @@
   border: none;
   background-color: transparent;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .range__scale {
+  position: relative;
   width: 86px;
   height: 14px;
   padding: 3px 5px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    width: 426px;
+  }
 }
 
 .range__bar {
+  position: absolute;
+  left: 0;
   width: 50%;
   height: 6px;
   background-color: #68b738;
   border-radius: 6px;
+  border: none;
+  transition: all 2s ease;
+
+  &--after {
+    left: 50%;
+  }
 }
