@@ -31,6 +31,7 @@
 }
 
 .range__scale {
+  position: relative;
   width: 86px;
   height: 14px;
   padding: 3px 5px;
@@ -44,8 +45,16 @@
 }
 
 .range__bar {
+  position: absolute;
+  left: 0;
   width: 50%;
   height: 6px;
   background-color: #68b738;
   border-radius: 6px;
+  border: none;
+  transition: all 2s ease;
+
+  &--after {
+    left: 50%;
+  }
 }
