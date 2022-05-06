@@ -6,36 +6,16 @@
   min-height: 290px;
   padding-top: 58px;
   padding-bottom: 43px;
-  background: url("../img/additional-catalog-promo-green.png") repeat,
-    url("../img/additional-catalog__promo-cat.png") center center no-repeat,
-    url("../img/background-cat-grey.png") repeat;
+  background: url("../img/background/additional-catalog__promo-green.png") repeat,
+    url("../img/catalog/additional-catalog__promo.jpg") center center no-repeat,
+    url("../img/background/background-cat-grey.png") repeat;
   background-size: contain;
 
-  @media (min-width: @tablet-width) {
-    min-height: 200px;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 49px;
-    padding-left: 77px;
-    padding-right: 124px;
-    background: url("../img/additional-catalog-promo-green.png") repeat,
-      url("../img/additional-catalog-promo-tablet.png") center center no-repeat,
-      url("../img/background-cat-grey.png") repeat;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 245px;
-    min-height: 288px;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 58px;
-    padding-bottom: 43px;
-    padding-left: 0;
-    padding-right: 0;
-    background: url("../img/additional-catalog-promo-green.png") repeat,
-      url("../img/additional-catalog__promo-cat.png") center center no-repeat,
-      url("../img/background-cat-grey.png") repeat;
-    background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background: url("../img/background/additional-catalog__promo-green@2x.png") repeat,
+      url("../img/catalog/additional-catalog__promo@2x.jpg") center center no-repeat,
+      url("../img/background/background-cat-grey.png") repeat;
+    background-size: contain;
   }
 }
 
@@ -43,20 +23,8 @@
   width: 79px;
   height: 79px;
   margin-bottom: 50px;
-  background: url("../img/icon_gift.svg");
+  background: url("../img/catalog/icon_gift.svg");
   background-size: 78px 80px;
-
-  @media (min-width: @tablet-width) {
-    width: 80px;
-    height: 83px;
-    margin-bottom: 0;
-    margin-top: -8px;
-    background-size: 80px 83px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-top: -2px;
-  }
 }
 
 .promo__description {
@@ -68,12 +36,69 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+}
 
-  @media (min-width: @tablet-width) {
-    text-align: start;
+@media (min-width: @tablet-width) {
+  .promo {
+    min-height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 49px;
+    padding-left: 77px;
+    padding-right: 124px;
+    background: url("../img/background/additional-catalog-promo-green.png") repeat,
+      url("../img/catalog/additional-catalog__promo-tablet.jpg") center center no-repeat,
+      url("../img/background/background-cat-grey.png") repeat;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/background/additional-catalog__promo-green@2x.png") repeat,
+        url("../img/catalog/additional-catalog__promo-tablet@2x.jpg") center center no-repeat,
+        url("../img/background/background-cat-grey.png") repeat;
+      background-size: contain;
+    }
   }
 
-  @media (min-width: @desktop-width) {
+  .promo__image {
+    width: 80px;
+    height: 83px;
+    margin-bottom: 0;
+    margin-top: -8px;
+    background-size: 80px 83px;
+  }
+
+  .promo__description {
+    text-align: start;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    width: 245px;
+    min-height: 288px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 58px;
+    padding-bottom: 43px;
+    padding-left: 0;
+    padding-right: 0;
+    background: url("../img/background/additional-catalog-promo-green.png") repeat,
+      url("../img/catalog/additional-catalog__promo-desktop.jpg") center center no-repeat,
+      url("../img/background/background-cat-grey.png") repeat;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/background/additional-catalog__promo-green@2x.png") repeat,
+        url("../img/catalog/additional-catalog__promo-desktop@2x.png") center center no-repeat,
+        url("../img/background/background-cat-grey.png") repeat;
+      background-size: cover;
+    }
+  }
+
+  .promo__image {
+    margin-top: -2px;
+  }
+
+  .promo__description {
     text-align: center;
   }
 }

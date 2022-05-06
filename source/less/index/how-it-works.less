@@ -50,15 +50,13 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
     column-gap: 60px;
     row-gap: 37px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-    column-gap: 70px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
   }
 }
 
@@ -71,6 +69,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    max-width: 245px;
     margin-bottom: 26px;
   }
 }

@@ -1,9 +1,9 @@
 .additional-product__parameters-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
   padding: 0;
   list-style-type: none;
 
@@ -11,6 +11,8 @@
     width: 100%;
     margin-bottom: 0;
     margin-right: 38px;
+    padding-top: 22px;
+    padding-bottom: 23px;
   }
 }
 
@@ -22,7 +24,7 @@
 
   &--name {
     flex-basis: 100%;
-    margin-bottom: 11px;
+    margin-bottom: 14px;
     font-family: @font-family;
     font-size: 16px;
     line-height: 16px;
@@ -76,9 +78,11 @@
 .additional-product__button {
   width: 100%;
   padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
 
   @media (min-width: @desktop-width) {
+    min-height: 40px;
     width: 359px;
+    margin: auto;
   }
 }
