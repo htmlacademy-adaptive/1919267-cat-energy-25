@@ -1,21 +1,13 @@
 .hero {
-  min-height: 479px;
+  min-height: 478px;
   margin-bottom: 18px;
-  background: url("../img/hero-background-cat.png") center top no-repeat,
-    url("../img/background-cat-grey.png") center top / 100% 302px repeat;
+  background: url("../img/index/index-background-cat-mobile.png") center top no-repeat,
+    url("../img/background/background-cat-grey.png") center top / 100% 302px repeat;
 
-  @media (min-width: @tablet-width) {
-    min-height: 837px;
-    background: none;
-    margin-bottom: 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    max-width: 1220px;
-    min-height: 577px;
-    margin: 0 auto;
-    margin-bottom: 82px;
-    background: url("../img/index-can-desktop.png") no-repeat 67% 31%;
+  @media (min-resolution: 2dppx) {
+    background: url("../img/index/index-background-cat-mobile@2x.png") center top no-repeat,
+      url("../img/background/background-cat-grey.png") center top / 100% 302px repeat;
+    background-size: 320px 302px;
   }
 }
 
@@ -24,18 +16,7 @@
   flex-direction: column;
   align-items: center;
   background: linear-gradient(90deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%);
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 0;
-    padding-left: 119px;
-    padding-right: 30px;
-    align-items: flex-start;
-    background: none;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-left: 80px;
-  }
+  z-index: -1;
 }
 
 .hero__title {
@@ -49,20 +30,6 @@
   font-weight: 400;
   text-align: center;
   color: #ffffff;
-
-  @media (min-width: @tablet-width) {
-    width: 450px;
-    margin-bottom: 41px;
-    padding-top: 30px;
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
-    color: @color-dark;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-top: 104px;
-  }
 }
 
 .hero__slogan {
@@ -78,41 +45,30 @@
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-
-  @media (min-width: @tablet-width) {
-    padding-left: 0;
-    padding-bottom: 20px;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: left;
-    color: #000000;
-    background: none;
-  }
-
-  @media (min-width: @tablet-width) {
-    max-width: 416px;
-  }
 }
 
 .hero__button-wrapper {
+  position: relative;
   display: flex;
   width: 100%;
   min-height: 314px;
-  background: url("../img/index-can-mobile.png") no-repeat center top,
-    linear-gradient(180deg, rgba(104, 183, 56, 0.85) 43%, rgba(255, 255, 255, 1) 43%);
+  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 43%, rgba(255, 255, 255, 1) 43%);
+  z-index: 1;
 
-  @media (min-width: @tablet-width) {
-    padding: 0;
-    padding-top: 29px;
-    display: block;
-    min-height: 609px;
-    background: url("../img/index-can-tablet.png") no-repeat center center;
-  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 280px;
+    height: 270px;
+    background: url("../img/index/index-can-mobile.png") no-repeat;
 
-  @media (min-width: @desktop-width) {
-    background: none;
-    min-height: 40px;
-    padding-top: 33px;
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index/index-can-mobile@2x.png") no-repeat;
+      background-size: 280px 270px;
+    }
   }
 }
 
@@ -130,16 +86,139 @@
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+}
 
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
+  .hero {
+    min-height: 837px;
+    background: none;
+    margin-bottom: 0;
+  }
+
+  .hero__info-wrapper {
+    margin-bottom: 0;
+    padding-left: 119px;
+    padding-right: 30px;
+    align-items: flex-start;
+    background: none;
+  }
+
+  .hero__title {
+    width: 450px;
+    margin-bottom: 41px;
+    padding-top: 30px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: @color-dark;
+  }
+
+  .hero__slogan {
+    padding-left: 0;
+    padding-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+    background: none;
+  }
+
+  .hero__button-wrapper {
+    padding: 0;
+    padding-top: 29px;
+    display: block;
+    min-height: 609px;
+    background: url("../img/index/index-can-tablet.png") no-repeat center center;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/index/index-can-tablet@2x.png") no-repeat center center;
+      background-size: 709px 609px;
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .hero__button {
     max-width: 244px;
     margin-left: 119px;
     padding: 17px 26px;
     font-size: 20px;
     line-height: 20px;
   }
+}
 
-  @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .hero {
+    position: relative;
+    min-height: 577px;
+    margin-bottom: 82px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -116px;
+      right: 0;
+      background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+        url("../img/index/index-background-cat-desktop.jpg"),
+        linear-gradient(to right, rgba(79, 78, 83, 1), rgba(79, 78, 83, 1));
+      background-repeat: no-repeat;
+      background-size: 720px 694px;
+      width: 50%;
+      height: 694px;
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+          url("../img/index/index-background-cat-desktop@2x.jpg") no-repeat right top,
+          linear-gradient(to right, rgba(79, 78, 83, 1), rgba(79, 78, 83, 1));
+        background-size: 720px 694px;
+      }
+    }
+  }
+
+  .hero__container {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  .hero__info-wrapper {
+    position: relative;
+    padding-left: 80px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 220px;
+      margin-top: -129px;
+      width: 552px;
+      height: 499px;
+      background: url("../img/index/index-can-desktop.png") no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/index/index-can-desktop@2x.png") no-repeat 67% 32%;
+        background-size: 552px 499px;
+      }
+    }
+  }
+
+  .hero__title {
+    padding-top: 106px;
+  }
+
+  .hero__slogan {
+    max-width: 416px;
+  }
+
+  .hero__button-wrapper {
+    background: none;
+    min-height: 40px;
+    padding-top: 33px;
+  }
+
+  .hero__button {
     margin-left: 80px;
   }
 }
