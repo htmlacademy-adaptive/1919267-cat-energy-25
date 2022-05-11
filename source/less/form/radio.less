@@ -6,9 +6,21 @@
   }
 }
 
+input[type="radio"]:focus + .radio__box {
+  outline: 1px solid #000000;
+}
+
 .radio__label {
   position: relative;
   line-height: 2;
+
+  &:hover > .radio__box {
+    border-color: #bababa;
+  }
+
+  &:active > .label-text {
+    color: rgba(34, 34, 34, 0.3);
+  }
 
   @media (min-width: @tablet-width) {
     line-height: 2.2;
@@ -32,7 +44,7 @@
     width: 13px;
     height: 13px;
     border-radius: 50%;
-    background-color: #68b738;
+    background-color: @basic-green;
     z-index: 2;
 
     @media (min-width: @tablet-width) {
@@ -41,6 +53,14 @@
       width: 18px;
       height: 18px;
     }
+  }
+
+  &:disabled + .radio__box {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .label-text {
+    color: rgba(34, 34, 34, 0.3);
   }
 }
 
