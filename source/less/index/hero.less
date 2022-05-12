@@ -128,10 +128,10 @@
     padding-top: 29px;
     display: block;
     min-height: 609px;
-    background: url("../img/index/index-can-tablet.png") no-repeat center center;
+    background: url("../img/index/index-can-tablet.png") no-repeat 29px center;
 
     @media (min-resolution: 2dppx) {
-      background: url("../img/index/index-can-tablet@2x.png") no-repeat center center;
+      background: url("../img/index/index-can-tablet@2x.png") no-repeat 29px center;
       background-size: 709px 609px;
     }
 
@@ -164,7 +164,8 @@
         url("../img/index/index-background-cat-desktop.jpg"),
         linear-gradient(to right, rgba(79, 78, 83, 1), rgba(79, 78, 83, 1));
       background-repeat: no-repeat;
-      background-size: 720px 694px;
+      background-size: cover;
+      background-position: right top;
       width: 50%;
       height: 694px;
       z-index: -1;

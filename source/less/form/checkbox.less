@@ -6,9 +6,17 @@
   }
 }
 
+input[type="checkbox"]:focus + .checkbox__box {
+  outline: 1px solid #000000;
+}
+
 .checkbox__label {
   position: relative;
   line-height: 2;
+
+  &:hover > .checkbox__box {
+    border-color: #bababa;
+  }
 
   @media (min-width: @tablet-width) {
     line-height: 3;
@@ -23,6 +31,14 @@
   position: absolute;
   appearance: none;
 
+  &:disabled + .checkbox__box {
+    opacity: 0.3;
+  }
+
+  &:disabled ~ .label-text {
+    color: rgba(34, 34, 34, 0.3);
+  }
+
   &:checked + .checkbox__box::before {
     content: "";
     position: absolute;
@@ -30,7 +46,7 @@
     left: 3px;
     width: 10px;
     height: 2px;
-    background: #68b738;
+    background: @basic-green;
     transform: rotate(50deg);
 
     @media (min-width: @tablet-width) {
