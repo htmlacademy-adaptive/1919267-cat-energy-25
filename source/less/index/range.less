@@ -62,6 +62,11 @@
     min-width: 70px;
     font-size: 20px;
     line-height: 30px;
+
+    &:focus {
+      outline: 2px solid @basic-green;
+      outline-style: auto;
+    }
   }
 
   .range__button-text {
@@ -99,6 +104,11 @@
     &:active {
       border: 1px solid #68b738;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    &:focus {
+      outline: 2px solid @basic-green;
+      outline-style: auto;
     }
 
     &::after {

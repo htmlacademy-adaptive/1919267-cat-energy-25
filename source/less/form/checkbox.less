@@ -6,8 +6,8 @@
   }
 }
 
-input[type="checkbox"]:focus + .checkbox__box {
-  outline: 1px solid #000000;
+.checkbox__input:focus + .checkbox__box {
+  outline: 1px solid @basic-green;
 }
 
 .checkbox__label {
@@ -35,7 +35,7 @@ input[type="checkbox"]:focus + .checkbox__box {
     opacity: 0.3;
   }
 
-  &:disabled ~ .label-text {
+  &:disabled ~ .checkbox__label-text {
     color: rgba(34, 34, 34, 0.3);
   }
 
