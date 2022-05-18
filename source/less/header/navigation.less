@@ -54,10 +54,11 @@
 .navigation__link {
   position: relative;
   display: block;
-  padding: 17px 0;
+  padding: 24px 0 21px;
   font-family: @font-family;
+  font-style: normal;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
@@ -65,10 +66,18 @@
   color: #000000;
 
   &:focus {
-    outline: 2px solid #444444;
+    outline: 2px solid #ffffff;
+    outline-style: auto;
+  }
+
+  &--catalog:focus,
+  &--form:focus {
+    outline: 2px solid @basic-green;
+    outline-style: auto;
   }
 
   @media (min-width: @tablet-width) {
+    padding: 18px 0;
     font-size: 18px;
     line-height: 1.33;
     font-weight: 400;
@@ -92,9 +101,14 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding: 17px 0;
     font-size: 20px;
     line-height: 1.5;
     color: #ffffff;
+
+    &--form {
+      padding: 18px 0;
+    }
 
     &:hover {
       color: rgba(255, 255, 255, 0.6);

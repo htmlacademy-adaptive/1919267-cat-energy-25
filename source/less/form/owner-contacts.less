@@ -12,6 +12,7 @@
 
 .owner-contacts__title {
   width: 100%;
+  line-height: 26px;
 
   & .subtitle__text {
     width: 222px;
@@ -19,6 +20,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 76px;
+    line-height: 36px;
 
     & .subtitle__text {
       width: auto;
@@ -27,7 +29,7 @@
 }
 
 .owner-contacts__container {
-  padding: 34px 20px 23px;
+  padding: 35px 20px 23px;
 
   @media (min-width: @tablet-width) {
     padding: 0 67px 65px 69px;
@@ -37,7 +39,7 @@
     max-width: 1220px;
     margin: 0 auto;
     padding: 0;
-    padding-bottom: 67px;
+    padding-bottom: 66px;
   }
 }
 
@@ -80,6 +82,10 @@
 .owner-contacts__input {
   margin-left: 11px;
   padding-top: 14px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 18px;
+  }
 
   &--email {
     @media (min-width: @tablet-width) {

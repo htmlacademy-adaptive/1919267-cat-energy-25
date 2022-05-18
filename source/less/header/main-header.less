@@ -10,7 +10,11 @@
 .main-header__container {
   display: flex;
   flex-direction: column;
-  min-height: 65px;
+  min-height: 63px;
+
+  &--form {
+    min-height: 65px;
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -37,7 +41,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 65px;
+  min-height: 63px;
+
+  &--form {
+    min-height: 65px;
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -78,7 +86,7 @@
 
   &--opened {
     position: absolute;
-    top: 66px;
+    top: 63px;
     left: 0;
     right: 0;
     width: auto;
